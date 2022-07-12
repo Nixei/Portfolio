@@ -19,7 +19,6 @@ export const NavbarNav = styled.ul`
     li{
         height: 64px;
         text-align: center;
-        color: #454545;
         font-size: 16px;
         line-height: 14px;
         letter-spacing: 2px;
@@ -39,7 +38,9 @@ export const NavbarNav = styled.ul`
     } 
 `;
 
-export const ThemeSwitch = styled.div`
+export const ThemeSwitch = styled.button`
+    border: none;
+    background-color: transparent;
     display:flex;
     flex: 0;
     flex-basis: 100px;
