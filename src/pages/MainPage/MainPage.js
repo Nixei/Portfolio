@@ -1,9 +1,9 @@
 import React from 'react'
-import Body from '../../components/Body/Body'
+import Navbar from '../../components/Navbar/Navbar';
 
 const MainPage = () => {
   return (
-    <Body />
+    <Navbar />
   );
 };
 

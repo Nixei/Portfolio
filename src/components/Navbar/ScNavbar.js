@@ -6,38 +6,34 @@ export const NavbarContainer = styled.nav`
     width: 100vh;
     height: 64px;
     background-color: transparent;
+    padding-right: 48px;
 `;
 
 export const NavbarNav = styled.ul`
-    display:flex;
-    flex-flow: row wrap;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
     align-items: center;
+    
     li{
         height: 64px;
-        list-style: none;
-        color: black;
         text-align: center;
+        color: #454545;
+        font-size: 16px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        transition: all ease-in .2s;
+        display: block;            
         cursor: pointer;
         
+        float: inline-start; 
         display: flex;
         align-items: center;
-        flex: 1;
-        
-        a{  
-            flex:1;
-            color: #454545;
-            font-size: 16px;
-            line-height: 14px;
-            letter-spacing: 2px;
-            font-weight: 500;
-            transition: all ease-in .2s;
-            display: block;
-        }    
+
         &:hover{ 
-            a{ 
-                color: #801DFF;
-                text-decoration: underline;
-            }      
+            color: #801DFF;
+            text-decoration: underline;
         }
     } 
 `;
