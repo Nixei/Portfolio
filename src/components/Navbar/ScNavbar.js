@@ -7,6 +7,7 @@ export const NavbarContainer = styled.nav`
     height: 64px;
     background-color: transparent;
     padding-right: 48px;
+    position: fixed;
 `;
 
 export const NavbarNav = styled.ul`

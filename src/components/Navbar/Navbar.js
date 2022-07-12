@@ -7,11 +7,11 @@ const Navbar = () => {
     <NavbarContainer>
       <NavbarNav>
         <ThemeSwitch />
-        <Link to=''><li>EDUCATION</li></Link>
-        <Link to=''><li>PROJECTS</li></Link>
-        <Link to=''><li>EXPERIENCE</li></Link>
-        <Link to=''><li>SKILLS</li></Link>
-        <Link to=''><li>HOME</li></Link>
+        <Link to='#education'><li>EDUCATION</li></Link>
+        <Link to='#projects'><li>PROJECTS</li></Link>
+        <Link to='#experience'><li>EXPERIENCE</li></Link>
+        <Link to='#skills'><li>SKILLS</li></Link>
+        <Link to='#home'><li>HOME</li></Link>
       </NavbarNav>
     </NavbarContainer>
   );
