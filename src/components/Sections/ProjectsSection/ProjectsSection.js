@@ -1,10 +1,16 @@
 import React from 'react';
-import { SectionFrame } from '../ScGlobalSectionComponents';
+import { SectionContainer, SectionFrame, SectionTitleContainer } from '../ScGlobalSectionComponents';
 
 const ProjectsSection = () => {
   return (
     <SectionFrame id='projects'>
-        projects
+        <SectionContainer>
+          <SectionTitleContainer top="85px" left="108px">
+              <h1 className='sectionTitle'>
+                PROJECTS
+              </h1>
+            </SectionTitleContainer>
+        </SectionContainer>
     </SectionFrame>
   )
 }

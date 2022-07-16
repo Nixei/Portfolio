@@ -37,7 +37,6 @@ export const NavbarNav = styled.ul`
         &:hover{ 
             color: #801DFF;
             text-decoration: underline;
-            font-weight: bolder;
         }
     } 
 

@@ -1,14 +1,5 @@
 import styled from "styled-components";
 
-export const HomeSectionContainer = styled.div`
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-`;
-
 export const HeadersContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -16,7 +7,7 @@ export const HeadersContainer = styled.div`
     align-items: center;
 
     position: absolute;
-    right: 16px;
+    right: 56px;
     bottom: 230px;
     width: min-content;
 

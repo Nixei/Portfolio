@@ -1,11 +1,11 @@
 import React from 'react';
-import { SectionFrame } from '../ScGlobalSectionComponents';
-import { HeadersContainer, HomeSectionContainer } from './ScHomeSection';
+import { SectionContainer, SectionFrame } from '../ScGlobalSectionComponents';
+import { HeadersContainer } from './ScHomeSection';
 
 const HomeSection = () => {
   return (
     <SectionFrame id='home'>
-        <HomeSectionContainer>
+        <SectionContainer>
           <HeadersContainer>
             <div id='headersRow'>
               <div id='headersColumn' className='title'>
@@ -20,7 +20,7 @@ const HomeSection = () => {
               A passionate developer who also loves UI Design and has experience on UI development as well as front-end development. Always looking for new opportunities.
             </p>
           </HeadersContainer>
-        </HomeSectionContainer>
+        </SectionContainer>
     </SectionFrame>
   )
 }
