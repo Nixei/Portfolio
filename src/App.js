@@ -8,7 +8,7 @@ import {lightTheme, darkTheme, GlobalStyles} from './themes.js';
 function App() {
   const [theme, setTheme] = useState('light');
 
-  const themeToggler = () => {
+  const toggleTheme = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light');
   }
 
@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <GlobalStyles/>
-          <MainPage />
+          <MainPage toggleTheme={toggleTheme}/>
         </div>
       </BrowserRouter>
     </ThemeProvider>

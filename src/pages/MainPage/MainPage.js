@@ -6,10 +6,10 @@ import HomeSection from '../../components/Sections/HomeSection/HomeSection';
 import ProjectsSection from '../../components/Sections/ProjectsSection/ProjectsSection';
 import SkillsSection from '../../components/Sections/SkillsSection/SkillsSection';
 
-const MainPage = () => {
+const MainPage = ({toggleTheme}) => {
   return (
     <>
-      <Navbar />
+      <Navbar toggleTheme={toggleTheme} />
       <HomeSection />
       <SkillsSection />
       <ExperienceSection />

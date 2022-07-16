@@ -1,17 +1,36 @@
 import React from 'react'
-import {NavbarContainer, NavbarNav, ThemeSwitch } from './ScNavbar'
-import { Link } from 'react-scroll';
+import NavbarLink from './NavbarLink';
+import {NavbarContainer, NavbarNav, ThemeSwitch } from './ScNavbar';
 
-const Navbar = () => {
+const Navbar = ({toggleTheme}) => {
   return (
     <NavbarContainer>
       <NavbarNav>
-        <ThemeSwitch />
-        <Link to='education' spy={true} smooth={true} offset={0} duration={500}><li className='navLinks'>EDUCATION</li></Link>
-        <Link to='projects' spy={true} smooth={true} offset={0} duration={500}><li className='navLinks'>PROJECTS</li></Link>
-        <Link to='experience' spy={true} smooth={true} offset={0} duration={500}><li className='navLinks'>EXPERIENCE</li></Link>
-        <Link to='skills' spy={true} smooth={true} offset={0} duration={500}><li className='navLinks'>SKILLS</li></Link>
-        <Link to='home' spy={true} smooth={true} offset={0} duration={500}><li className='navLinks'>HOME</li></Link>
+        <ThemeSwitch
+          title='Switch the Theme!'
+          className='themeSwitchButton'
+          onClick={() => toggleTheme()}
+        />
+          <NavbarLink 
+            toId="education"
+            text="EDUCATION"
+          />
+          <NavbarLink 
+            toId="projects"
+            text="PROJECTS"
+          />
+          <NavbarLink 
+            toId="experience"
+            text="EXPERIENCE"
+          />
+          <NavbarLink 
+            toId="skills"
+            text="SKILLS"
+          />
+          <NavbarLink 
+            toId="home"
+            text="HOME"
+          />
       </NavbarNav>
     </NavbarContainer>
   );
