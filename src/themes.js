@@ -25,7 +25,7 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         margin: 0;
         padding: 0px;
-        transition: all ease-in .2s;
+        transition:  all .2s ease-out;
 
         &::selection {
             background-color: hotpink;

@@ -18,8 +18,9 @@ export const NavbarNav = styled.ul`
     list-style-type: none;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
     
-    li{
+    li{ 
         height: 64px;
         text-align: center;
         font-size: 20px;
@@ -35,7 +36,7 @@ export const NavbarNav = styled.ul`
         align-items: center;
 
         &:hover {
-            transform: rotate(90deg) translateX(50%); 
+            color: #801DFF;
         }
     }
 
