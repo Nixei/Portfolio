@@ -34,15 +34,16 @@ export const NavbarNav = styled.ul`
         display: flex;
         align-items: center;
 
-        &:hover{ 
+        &:hover {
+            transform: rotate(90deg) translateX(50%); 
+        }
+    }
+
+    .active {
+        li {
             color: #801DFF;
             text-decoration: underline;
         }
-    } 
-
-    .active {
-        color: #801DFF;
-        text-decoration: underline;
     }
 `;
 

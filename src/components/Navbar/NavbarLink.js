@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-const NavbarLink = ({toId, text}) => {
+const NavbarLink = ({id, text}) => {
+
   return (
     <Link
-        to={toId}
+        to={id}
         spy={true}
         smooth={true}
-        offset={0}
         duration={500}
     >
         <li

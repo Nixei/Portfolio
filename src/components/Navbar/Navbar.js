@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import NavbarLink from './NavbarLink';
 import {NavbarContainer, NavbarNav, ThemeSwitch } from './ScNavbar';
 
@@ -11,24 +11,24 @@ const Navbar = ({toggleTheme}) => {
           className='themeSwitchButton'
           onClick={() => toggleTheme()}
         />
-          <NavbarLink 
-            toId="education"
+          <NavbarLink
+            id="education"
             text="EDUCATION"
           />
           <NavbarLink 
-            toId="projects"
+            id="projects"
             text="PROJECTS"
           />
           <NavbarLink 
-            toId="experience"
+            id="experience"
             text="EXPERIENCE"
           />
           <NavbarLink 
-            toId="skills"
+            id="skills"
             text="SKILLS"
           />
           <NavbarLink 
-            toId="home"
+            id="home"
             text="HOME"
           />
       </NavbarNav>
